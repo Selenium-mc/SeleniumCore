@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class SeleniumCore extends JavaPlugin
 {
     private FileConfiguration config = getConfig();
+    private DataManager dataManager;
 
     @Override
     public void onEnable()
@@ -20,6 +21,8 @@ public class SeleniumCore extends JavaPlugin
 
         if(this.getConfig().getBoolean("singlePlayerSleepEnabled"))
             getServer().getPluginManager().registerEvents(new SleepListener(this), this);
+
+        this.dataManager = new DataManager(this);
     }
 
     @Override
@@ -32,5 +35,10 @@ public class SeleniumCore extends JavaPlugin
     public FileConfiguration getPluginConfig()
     {
         return config;
+    }
+
+    public DataManager getDataManager()
+    {
+        return dataManager;
     }
 }

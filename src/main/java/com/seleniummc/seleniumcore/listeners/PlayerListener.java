@@ -17,6 +17,6 @@ public class PlayerListener implements Listener
     @EventHandler
     public void onPlayerLoginEvent(PlayerLoginEvent event)
     {
-        
+
     }
 }
