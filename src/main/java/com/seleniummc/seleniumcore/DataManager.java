@@ -36,6 +36,12 @@ public class DataManager
     {
         this.players.put(player.getUniqueId(), new PlayerData(this.plugin, player));
 
-        //this.getData(player).load();
+        this.getData(player).load();
+    }
+
+    public void unregisterPlayer(Player player)
+    {
+        this.getData(player).save();
+        this.players.remove(player.getUniqueId());
     }
 }
