@@ -30,7 +30,7 @@ public class SeleniumCore extends JavaPlugin
     public void onDisable()
     {
         //Fired when the server stops and disables all plugins
-
+        this.getDataManager().unregisterAll();
     }
 
     public FileConfiguration getPluginConfig()

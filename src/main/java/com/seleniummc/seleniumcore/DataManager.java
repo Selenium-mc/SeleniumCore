@@ -44,4 +44,12 @@ public class DataManager
         this.getData(player).save();
         this.players.remove(player.getUniqueId());
     }
+
+    public void unregisterAll()
+    {
+        for(Player player : this.plugin.getServer().getOnlinePlayers())
+        {
+            this.unregisterPlayer(player);
+        }
+    }
 }
