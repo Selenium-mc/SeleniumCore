@@ -33,12 +33,12 @@ public class PlayerListener implements Listener
         if(this.plugin.getDataManager().getData(event.getPlayer()).getIsWhitelisted())
         {
             event.getPlayer().setGameMode(GameMode.SURVIVAL);
-            event.setJoinMessage(event.getPlayer().getDisplayName() + " exists now!");
+            event.setJoinMessage(event.getPlayer().getDisplayName() + " has joined the game!");
         }else
         {
             event.getPlayer().setGameMode(GameMode.SPECTATOR);
             event.getPlayer().sendMessage("You are currently not whitelisted, but you can spectate. And existing member will need to whitelist you!");
-            event.setJoinMessage(event.getPlayer().getDisplayName() + " exists now as a spectator!");
+            event.setJoinMessage(event.getPlayer().getDisplayName() + " has joined the game as a spectator!");
         }
     }
 
