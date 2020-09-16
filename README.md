@@ -1,3 +1,3 @@
 # SeleniumCore
-Core plugin for the Selenium Survival Server.
-Build with intellij IDEA
+Core plugin for the Selenium Survival Minecraft Server.
+Build with maven
