@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/SeleniumCore_jar</output-path>
     <root id="archive" name="SeleniumCore.jar">
       <element id="module-output" name="SeleniumCore" />
-      <element id="extracted-dir" path="$USER_HOME$/Downloads/spigot-api-1.16.2-R0.1-20200903.084218-53.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
