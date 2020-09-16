@@ -1,7 +1,0 @@
-name: SeleniumCore
-description: Core plugin on the Selenium Server.
-version: 1.0
-authors: [DolphinBob]
-main: com.seleniummc.seleniumcore.SeleniumCore
-api-version: 1.16
-prefix: SeleniumCore
