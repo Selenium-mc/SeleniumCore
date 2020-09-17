@@ -11,7 +11,7 @@ public class DataManager
 {
     private final SeleniumCore plugin;
     private final String dataFolder;
-    private final Map<UUID, PlayerData> players = new HashMap<>();
+    private final Map<UUID, PlayerData> players = new HashMap();
 
     public DataManager(SeleniumCore plugin)
     {
@@ -36,6 +36,20 @@ public class DataManager
     {
         this.players.put(player.getUniqueId(), new PlayerData(this.plugin, player));
 
+        this.getData(player).load();
+    }
 
+    public void unregisterPlayer(Player player)
+    {
+        this.getData(player).save();
+        this.players.remove(player.getUniqueId());
+    }
+
+    public void unregisterAll()
+    {
+        for(Player player : this.plugin.getServer().getOnlinePlayers())
+        {
+            this.unregisterPlayer(player);
+        }
     }
 }

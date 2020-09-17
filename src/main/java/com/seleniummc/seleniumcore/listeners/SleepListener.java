@@ -39,8 +39,7 @@ public class SleepListener implements Listener
                     player.sendMessage(event.getPlayer().getDisplayName() + " has slept. Good morning!");
                 }
             }
-        },
-                plugin.getPluginConfig().getInt("singlePlayerSleepSleepTicks"));
+        }, plugin.getPluginConfig().getInt("singlePlayerSleepSleepTicks"));
     }
 
     @EventHandler
