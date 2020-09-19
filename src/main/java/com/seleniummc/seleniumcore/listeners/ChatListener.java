@@ -16,11 +16,14 @@ public class ChatListener implements Listener
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         String message = event.getMessage();
 
-        // (?i) makes the target case insensitive
+        // Emoticons
+        //   (?i) makes the target case insensitive
         message = message.replaceAll("(?i):shrug:", "¯\\_(ツ)_/¯");
         message = message.replaceAll("(?i):tableflip:", "(╯°□°）╯︵ ┻━┻");
         message = message.replaceAll("(?i):up:|:upvote:", ChatColor.RED+"↑");
         message = message.replaceAll("(?i):down:|:downvote:", ChatColor.BLUE+"↓");
+
+        // Colors
 
         event.setMessage(message);
     }
