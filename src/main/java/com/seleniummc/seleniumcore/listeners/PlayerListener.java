@@ -44,8 +44,6 @@ public class PlayerListener implements Listener
 
     @EventHandler(priority = EventPriority.MONITOR) // Runs very last
     public void onPlayerQuit(PlayerQuitEvent event) {
-        // NOTE: Title isn't cleared when the player leaves the server
-        // event.getPlayer().resetTitle();
         event.setQuitMessage(event.getPlayer().getDisplayName() + " no longer exists.");
 
         this.plugin.getDataManager().unregisterPlayer(event.getPlayer());
