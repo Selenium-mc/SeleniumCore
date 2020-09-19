@@ -4,6 +4,7 @@ import com.seleniummc.seleniumcore.SeleniumCore;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.ChatColor;
 
 public class ChatListener implements Listener
 {
@@ -18,6 +19,8 @@ public class ChatListener implements Listener
         // (?i) makes the target case insensitive
         message = message.replaceAll("(?i):shrug:", "¯\\_(ツ)_/¯");
         message = message.replaceAll("(?i):tableflip:", "(╯°□°）╯︵ ┻━┻");
+        message = message.replaceAll("(?i):up:|:upvote:", ChatColor.RED+"↑");
+        message = message.replaceAll("(?i):down:|:downvote:", ChatColor.BLUE+"↓");
 
         event.setMessage(message);
     }
