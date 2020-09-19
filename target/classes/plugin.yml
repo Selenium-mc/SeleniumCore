@@ -5,3 +5,7 @@ authors: [Dolphinbob, Supercolbat, TheEpicProgrammer]
 main: com.seleniummc.seleniumcore.SeleniumCore
 api-version: 1.16
 prefix: SeleniumCore
+commands:
+  shrug:
+    description: I wonder what it does. Shrug.
+    usage: /shrug

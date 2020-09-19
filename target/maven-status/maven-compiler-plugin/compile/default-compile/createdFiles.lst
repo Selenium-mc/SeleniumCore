@@ -1,0 +1,8 @@
+com\seleniummc\seleniumcore\listeners\ChatListener.class
+com\seleniummc\seleniumcore\PlayerData.class
+com\seleniummc\seleniumcore\listeners\SleepListener.class
+com\seleniummc\seleniumcore\listeners\PlayerListener.class
+com\seleniummc\seleniumcore\utils\GsonUtil.class
+com\seleniummc\seleniumcore\SeleniumCore.class
+com\seleniummc\seleniumcore\Commands\WhitelistCommand.class
+com\seleniummc\seleniumcore\DataManager.class
