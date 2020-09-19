@@ -20,8 +20,8 @@ public class ChatListener implements Listener
         //   (?i) makes the target case insensitive
         message = message.replaceAll("(?i):shrug:", "¯\\_(ツ)_/¯");
         message = message.replaceAll("(?i):tableflip:", "(╯°□°）╯︵ ┻━┻");
-        message = message.replaceAll("(?i):up:|:upvote:", ChatColor.RED+"↑");
-        message = message.replaceAll("(?i):down:|:downvote:", ChatColor.BLUE+"↓");
+        message = message.replaceAll("(?i):up:|:upvote:", ChatColor.RED + ChatColor.BOLD.toString() + "↑");
+        message = message.replaceAll("(?i):down:|:downvote:", ChatColor.BLUE + ChatColor.BOLD.toString() + "↓");
 
         // Colors
 
