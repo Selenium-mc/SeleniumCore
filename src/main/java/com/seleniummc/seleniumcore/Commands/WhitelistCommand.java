@@ -1,4 +1,4 @@
-package com.seleniummc.seleniumcore.Commands;
+package com.seleniummc.seleniumcore.commands;
 
 
 import org.bukkit.ChatColor;
