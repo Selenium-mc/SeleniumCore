@@ -2,6 +2,7 @@ package com.seleniummc.seleniumcore;
 
 import com.seleniummc.seleniumcore.listeners.PlayerListener;
 import com.seleniummc.seleniumcore.listeners.SleepListener;
+import com.seleniummc.seleniumcore.listeners.ChatListener;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -23,6 +24,7 @@ public class SeleniumCore extends JavaPlugin
         if(this.getConfig().getBoolean("singlePlayerSleepEnabled"))
             getServer().getPluginManager().registerEvents(new SleepListener(this), this);
         getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
+        getServer().getPluginManager().registerEvents(new ChatListener(this), this);
         this.dataManager = new DataManager(this);
     }
 
