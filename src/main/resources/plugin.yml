@@ -5,3 +5,8 @@ authors: [Dolphinbob, Supercolbat, TheEpicProgrammer]
 main: com.seleniummc.seleniumcore.SeleniumCore
 api-version: 1.16
 prefix: SeleniumCore
+commands:
+  pm:
+    description: Send a private message
+    usage: /pm
+    aliase: [w, msg]
