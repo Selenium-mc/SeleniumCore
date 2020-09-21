@@ -1,11 +1,10 @@
 package com.seleniummc.seleniumcore.listeners;
 
 import com.seleniummc.seleniumcore.SeleniumCore;
-import com.seleniummc.seleniumcore.Utils;
+import com.seleniummc.seleniumcore.utils.TextUtil;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.ChatColor;
 
 public class ChatListener implements Listener
 {
@@ -18,6 +17,6 @@ public class ChatListener implements Listener
         String message = event.getMessage();
 
         // Send message
-        event.setMessage(Utils.format(message));
+        event.setMessage(TextUtil.format(message));
     }
 }

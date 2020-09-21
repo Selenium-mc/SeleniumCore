@@ -1,8 +1,8 @@
-package com.seleniummc.seleniumcore;
+package com.seleniummc.seleniumcore.utils;
 
 import org.bukkit.ChatColor;
 
-public class Utils
+public class TextUtil
 {
     public static String format(String message)
     {

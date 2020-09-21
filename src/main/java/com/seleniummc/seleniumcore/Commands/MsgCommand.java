@@ -1,7 +1,7 @@
 package com.seleniummc.seleniumcore.commands;
 
 import com.seleniummc.seleniumcore.SeleniumCore;
-import com.seleniummc.seleniumcore.Utils;
+import com.seleniummc.seleniumcore.utils.TextUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -21,7 +21,7 @@ public class MsgCommand implements CommandExecutor
     public boolean onCommand(CommandSender sender, Command cmd, String alias, String[] args) {
         if (args.length >= 2) {
             if (Bukkit.getPlayerExact(args[0]) != null) {
-                String message = Utils.format(String.join(" ", Arrays.copyOfRange(args, 1, args.length)));
+                String message = TextUtil.format(String.join(" ", Arrays.copyOfRange(args, 1, args.length)));
                 Player target = Bukkit.getPlayer(args[0]);
 
                 sender.sendMessage(String.format(ChatColor.DARK_PURPLE+"[TO: %s] "+ChatColor.RESET+"%s", args[0], message));
