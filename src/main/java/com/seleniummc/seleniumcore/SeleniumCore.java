@@ -24,6 +24,9 @@ public class SeleniumCore extends JavaPlugin
 
         // Commands
         this.getCommand("pm").setExecutor(new MsgCommand(this));
+        this.getCommand("w").setExecutor(new MsgCommand(this));
+        this.getCommand("msg").setExecutor(new MsgCommand(this));
+
 
         if(this.getConfig().getBoolean("singlePlayerSleepEnabled"))
             getServer().getPluginManager().registerEvents(new SleepListener(this), this);
